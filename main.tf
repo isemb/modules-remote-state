@@ -1,7 +1,7 @@
 module "s3_website" {
   source = "./modules/s3-website"
 
-  bucket_name = "iselin-bakke-pgr301-website"  # Bytt til noe globalt unikt (f.eks. ditt-navn-pgr301-website)
+  bucket_name = "iselin-bakke-pgr301-website" # Bytt til noe globalt unikt (f.eks. ditt-navn-pgr301-website)
 
   tags = {
     Name        = "PGR301 Lab"
@@ -13,7 +13,7 @@ module "s3_website" {
 module "s3_website_two" {
   source = "./modules/s3-website"
 
-  bucket_name = "iselin-bakke-pgr301-website-2"  # Må være globalt unikt, bruk ditt eget prefiks
+  bucket_name = "iselin-bakke-pgr301-website-2" # Må være globalt unikt, bruk ditt eget prefiks
 
   tags = {
     Name        = "PGR301 Lab - Nettside 2"
